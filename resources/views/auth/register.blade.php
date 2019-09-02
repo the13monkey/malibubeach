@@ -46,7 +46,7 @@
 
         <div class="mb-3">
             <label for="phone">Phone</label>
-            <input type="tel" class="form-control @error ('phone') is-invalid @enderror" id="phone" placeholder="(123) 456-7890" name="phone">
+            <input type="tel" class="form-control @error ('phone') is-invalid @enderror" id="phone" placeholder="(123) 456-7890" name="phone" required>
             @error('phone')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
