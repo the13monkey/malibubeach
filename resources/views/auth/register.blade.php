@@ -102,7 +102,7 @@
                 @enderror
             </div>
         </div>
-        <div class="row"> 
+        <div class="row" style="display: none"> 
             <div class="col-md-3 mb-3">
                 <label for="password">{{ __('Password') }}</label>
                 <input id="password" type="text" class="form-control @error('password') is-invalid @enderror" name="password" required value="{{ str_random(20) }}">
